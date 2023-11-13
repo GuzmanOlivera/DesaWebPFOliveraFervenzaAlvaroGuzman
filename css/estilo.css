@@ -588,8 +588,8 @@ iframe {
 }
 
 
-/* Estilos para PCs de mayor tamano de pantalla (desde 1200px) */
-@media (max-width: 1200px) {
+/* Estilos para PCs de mayor tamano de pantalla (hasta 1400px) */
+@media (max-width: 1400px) {
     .contenedorMenu {
         justify-content: center;
     }
