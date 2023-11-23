@@ -19,6 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"
         integrity="sha384-Hj4xAFhIz2AosctpRQYXlE74J4cy7PpKMT+Z9s4j59y10P75a+VuSz4jjqwPlbY" crossorigin="anonymous">
         </script>
+    <!-- Enlace a AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Enlace a hoja de estilo propia -->
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
@@ -31,7 +33,7 @@
     <!-- Encabezado de la pagina -->
     <header>
         <!-- Logo y nombre del cafe -->
-        <a href="">
+        <a href="../index.html">
             <img class="logo" src="../img/logo.png" alt="Logo WebDev">
             <span class="headerText">Café WebDev</span>
         </a>
@@ -80,8 +82,8 @@
         <div class="container">
             <!-- Agregamos la clase container para el sistema de cuadricula -->
             <h1 class="text-uppercase">Menú</h1>
-            <h2 class="tituloH2Destacado">Bebidas</h2>
-            <div class="contenedorMenu row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <h2 class="tituloH2Destacado" data-aos="fade-up" data-aos-duration="800">Bebidas</h2>
+            <div class="contenedorMenu row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" data-aos="fade-up" data-aos-duration="800">
                 <!-- 
                     - 'row' establece una fila en el sistema de cuadricula de Bootstrap.
                     - 'row-cols-1' indica que, por defecto, debe haber una columna en cada fila (en este caso se aplicara por descarte en dispositivos pequenos)
@@ -121,8 +123,8 @@
                 </div>
             </div>
             <!-- Fin de la fila para las bebidas -->
-            <h2 class="tituloH2Destacado">Alimentos</h2>
-            <div class="contenedorMenu row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <h2 class="tituloH2Destacado" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Alimentos</h2>
+            <div class="contenedorMenu row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <!-- Inicio de la fila para los alimentos -->
                 <div class="itemMenu col mb-2">
                     <img class="imgMenu img-fluid" src="../img/croissant.jpg" alt="Foto de Croissant">
@@ -168,8 +170,14 @@
     
             // Listener para gestionar el scroll
             window.addEventListener('scroll', toggleBotonArriba);
+
+            // Inicializar AOS
+            AOS.init();
         });
     </script>
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </body>
 
 </html>

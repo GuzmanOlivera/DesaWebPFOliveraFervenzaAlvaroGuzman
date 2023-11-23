@@ -1,0 +1,99 @@
+// _header.scss
+
+/**********/
+/* Header */
+/**********/
+
+header {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el texto "Cafe WebDev" en el header */
+.headerText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+
+    /* Hace que el texto sea un bloque para centrarlo facilmente */
+    display: block;
+
+    /* Agrega espacio entre el navbar y el texto */
+    margin-bottom: 20px;
+}
+
+nav {
+    /* Centra el texto dentro del navbar */
+    text-align: center;
+    background-color: #A0522D;
+    padding: 10px 20px;
+
+    ul {
+        /* Quita los bullets */
+        list-style: none;
+
+        /* Alinea la lista de enlaces al centro */
+        margin: 0 auto;
+
+        /* Hace que la lista ocupe solo el ancho necesario */
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            font-family: 'Roboto', sans-serif;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: white;
+                background-color: #A0522D;
+                padding: 10px 20px;
+                border-radius: 5px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.navbar {
+    background-color: #A0522D;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    .nav-link {
+        font-weight: bold;
+        color: #FFF;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    /* Quita el subrayado */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar.justify-content-center .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        /* Ajusta el espacio entre el logotipo y el texto si es necesario */
+        margin-right: 10px;
+    }
+}
+
+/* Efecto hover a los enlaces del menu */
+.nav-link:hover {
+    color: #ffffff;
+    background-color: #7D3C16;
+}

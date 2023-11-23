@@ -20,6 +20,9 @@
         integrity="sha384-Hj4xAFhIz2AosctpRQYXlE74J4cy7PpKMT+Z9s4j59y10P75a+VuSz4jjqwPlbY" crossorigin="anonymous">
         </script>
 
+    <!-- Enlace a AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Enlace a hoja de estilo propia -->
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
@@ -31,7 +34,7 @@
     <!-- Encabezado de la pagina -->
     <header>
         <!-- Logo y nombre del cafe -->
-        <a href="">
+        <a href="../index.html">
             <img class="logo" src="../img/logo.png" alt="Logo WebDev">
             <span class="headerText">Café WebDev</span>
         </a>
@@ -79,7 +82,7 @@
     <main>
         <h1 class="text-center text-uppercase">Blog</h1>
         <div class="entradasBlog">
-            <article>
+            <article data-aos="fade-up" data-aos-duration="800">
                 <h2 class="tituloH2Destacado">Los beneficios del café para la concentración</h2>
                 <p class="parrafosLargos">El café es una bebida popular en todo el mundo, y muchos lo disfrutan por su
                     delicioso sabor. Pero,
@@ -87,8 +90,8 @@
                     exploramos los beneficios del café para la mente y cómo puedes aprovecharlos en tu vida diaria.</p>
                 <a class="blogLink" href="">Leer más</a>
             </article>
-            <article>
-                <h2 class="tituloH2Destacado">Las últimas tendencias tecnológicas en la industria del café</h2>
+            <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <h2 class="tituloH2Destacado" >Las últimas tendencias tecnológicas en la industria del café</h2>
                 <p class="parrafosLargos">La tecnología está transformando la industria del café a pasos agigantados.
                     Desde aplicaciones de
                     seguimiento de café hasta máquinas de tostado de última generación, el mundo del café está
@@ -96,7 +99,7 @@
                     tecnológicas que están dando forma al futuro del café.</p>
                 <a class="blogLink" href="">Leer más</a>
             </article>
-            <article>
+            <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <h2 class="tituloH2Destacado">Explorando el arte del tostado de café de especialidad</h2>
                 <p class="parrafosLargos">En el emocionante mundo del café de especialidad, el proceso de tostado es
                     esencial para el sabor y la calidad del café. Descubre cómo se tuesta el café de especialidad en
@@ -146,8 +149,13 @@
     
             // Listener para gestionar el scroll
             window.addEventListener('scroll', toggleBotonArriba);
+
+            // Inicializar AOS
+            AOS.init();
         });
     </script>
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>

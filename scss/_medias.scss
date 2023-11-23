@@ -1,0 +1,95 @@
+// _medias.scss
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Estilos para dispositivos moviles */
+@media (max-width: 767px) {
+    /* Estilo para hacer que la barra de navegacion sea responsive en pantallas mas chicas */
+
+    nav {
+        text-align: center;
+
+        ul {
+            display: block;
+            text-align: center;
+
+            li {
+                display: block;
+                margin: 0 auto;
+
+                a {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .collapse.navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        text-align: center;
+    }
+
+    /* Estilo para el precio en el menu con menor tamano de fuente */
+
+    .contenedorMenu p {
+        font-size: 12px;
+    }
+
+    /* Videos del blog */
+
+    .blogVideo {
+        width: 80%;
+        height: 40vw;
+    }
+
+    /* Ubicacion */
+
+    .mapaContainer iframe {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+/* Estilos para  pantallas mas grandes (PC) */
+@media (min-width: 768px) {
+    /* Videos del blog */
+
+    .blogVideo {
+        width: 560px;
+        height: 315px;
+    }
+
+    /* Ubicacion */
+
+    .mapaContainer iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+/* Estilos para tabletas (768px hasta 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Estilo para el precio en el menu con menor tamano de fuente */
+
+    .contenedorMenu p {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para PCs de mayor tamano de pantalla (hasta 1400px) */
+@media (max-width: 1400px) {
+    .contenedorMenu {
+        justify-content: center;
+    }
+}

@@ -1,596 +1,560 @@
-/* Fuente Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/**********/
+/* Header */
+/**********/
+header {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para el texto "Cafe WebDev" en el header */
+.headerText {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  /* Hace que el texto sea un bloque para centrarlo facilmente */
+  display: block;
+  /* Agrega espacio entre el navbar y el texto */
+  margin-bottom: 20px;
+}
+
+nav {
+  /* Centra el texto dentro del navbar */
+  text-align: center;
+  background-color: #A0522D;
+  padding: 10px 20px;
+}
+nav ul {
+  /* Quita los bullets */
+  list-style: none;
+  /* Alinea la lista de enlaces al centro */
+  margin: 0 auto;
+  /* Hace que la lista ocupe solo el ancho necesario */
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: #A0522D;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.navbar {
+  background-color: #A0522D;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.navbar .nav-link {
+  font-weight: bold;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  /* Quita el subrayado */
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar.justify-content-center .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar.justify-content-center .navbar-brand .logo {
+  /* Ajusta el espacio entre el logotipo y el texto si es necesario */
+  margin-right: 10px;
+}
+
+/* Efecto hover a los enlaces del menu */
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #7D3C16;
+}
 
 /********/
 /* Body */
 /********/
-
 body {
-    background-color: #F5F5DC;
+  background-color: #F5F5DC;
 }
 
 /******************/
 /* Bootstrap Rows */
 /******************/
-
 .row {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  /* Ajusta el margen superior de la primera fila */
+  /* Anade un poco de espacio entre los elementos */
 }
-
-/* Ajusta el margen superior de la primera fila */
 .row:first-child {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
-/* Anade un poco de espacio entre los elementos */
 .row:not(:first-child) {
-    margin-top: 10px;
-}
-
-/**********/
-/* Header */
-/**********/
-
-header {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.logo {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilo para el texto "Cafe WebDev" en el header */
-.headerText {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    /* Hace que el texto sea un bloque para centrarlo facilmente */
-    display: block;
-    /* Agrega espacio entre el navbar y el texto */
-    margin-bottom: 20px;
-}
-
-nav {
-    /* Centra el texto dentro del navbar */
-    text-align: center;
-    background-color: #A0522D;
-    padding: 10px 20px;
-}
-
-nav ul {
-    /* Quita los bullets */
-    list-style: none;
-    /* Alinea la lista de enlaces al centro */
-    margin: 0 auto;
-    /* Hace que la lista ocupe solo el ancho necesario */
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
-nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    background-color: #A0522D;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.navbar {
-    background-color: #A0522D;
-    border-bottom: 1px solid #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.navbar .nav-link {
-    font-weight: bold;
-    color: #FFF;
-}
-
-a {
-    text-decoration: none;
-    /* Quita el subrayado */
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-}
-
-.navbar.justify-content-center .navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar.justify-content-center .navbar-brand .logo {
-    margin-right: 10px;
-    /* Ajusta el espacio entre el logotipo y el texto si es necesario */
-}
-
-/* Efecto hover a los enlaces del menu */
-.nav-link:hover {
-    color: #ffffff;
-    background-color: #7D3C16;
-}
-
-/* Ajusta el tamano de fuente y el espaciado en el pie de pagina  */
-footer {
-    font-size: 14px;
-    padding: 10px;
+  margin-top: 10px;
 }
 
 /********/
 /* Main */
 /********/
-
 main {
-    margin: 20px;
-    padding: 20px;
+  margin: 20px;
+  padding: 20px;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    margin: 20px 0px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
 }
 
 .introP {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    /* Espaciado superior e inferior */
-    margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  /* Espaciado superior e inferior */
+  margin: 20px 0;
 }
 
-.tituloH2,
-.tituloH2Destacado {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
-    /* Color personalizado */
-    color: #A0522D;
-    /* Linea separadora */
-    border-bottom: 1px solid #333;
-    /* Espaciado inferior */
-    padding-bottom: 5px;
+.tituloH2 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  /* Color personalizado */
+  color: #A0522D;
+  /* Linea separadora */
+  border-bottom: 1px solid #333;
+  /* Espaciado inferior */
+  padding-bottom: 5px;
 }
 
 .tituloH2Destacado {
-    /* Linea separadora */
-    border-bottom: 2px solid #333;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  /* Color personalizado */
+  color: #A0522D;
+  /* Linea separadora */
+  border-bottom: 1px solid #333;
+  /* Espaciado inferior */
+  padding-bottom: 5px;
+  /* Linea separadora */
+  border-bottom: 2px solid #333;
 }
 
 .parrafosLargos {
-    font-size: 16px;
-    /* Espaciado entre lineas para mejorar la legibilidad */
-    line-height: 1.6;
-    color: #333;
-    /* Espaciado superior para separar el parrafo del titulo */
-    margin-top: 10px;
+  font-size: 16px;
+  /* Espaciado entre lineas para mejorar la legibilidad */
+  line-height: 1.6;
+  color: #333;
+  /* Espaciado superior para separar el parrafo del titulo */
+  margin-top: 10px;
 }
 
 /* Estilo para el boton "Volver arriba" */
 .btnArriba {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #A0522D;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    z-index: 999;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #A0522D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 999;
 }
-
 .btnArriba:hover {
-    background-color: #D2691E;
-    transform: scale(1.1);
-}
-
-/**********/
-/* Footer */
-/**********/
-
-footer {
-    margin: 20px;
-    padding: 20px;
-    border-top: 1px solid black;
-    text-align: center;
+  background-color: #D2691E;
+  transform: scale(1.1);
 }
 
 /******/
 /*BLOG*/
 /******/
-
 a.blogLink {
-    display: inline;
-    color: #A0522D;
-    /* Tamano de fuente mas pequeno para el enlace */
-    font-size: 12px;
-    /* Elimina el subrayado predeterminado */
-    text-decoration: none;
-    /* Texto en negrita */
-    font-weight: bold;
+  display: inline;
+  color: #A0522D;
+  /* Tamano de fuente mas pequeno para el enlace */
+  font-size: 12px;
+  /* Elimina el subrayado predeterminado */
+  text-decoration: none;
+  /* Texto en negrita */
+  font-weight: bold;
+}
+a.blogLink:hover {
+  text-decoration: underline;
 }
 
 /***********/
 /* IFRAMES */
 /***********/
-
 /* Se utilizan iframes en las paginas del blog y en la de contacto */
-
 /* Estilo para el iframe de los articulos del blog */
 .entradasBlog article iframe {
-    display: block;
-    /* Agregar margen para separacion y evitar superposicion */
-    margin: 0 20px 20px 0;
+  display: block;
+  /* Agregar margen para separacion y evitar superposicion */
+  margin: 0 20px 20px 0;
 }
 
 iframe {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 /***********/
 /* Eventos */
 /***********/
-
 .introEventos {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    /* Espaciado superior e inferior */
-    margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  /* Espaciado superior e inferior */
+  margin: 20px 0;
 }
 
 /* Estilo para las descripciones de eventos */
 .contenedorEventos p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    /* Color de texto personalizado */
-    margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  /* Color de texto personalizado */
+  color: #666;
+  margin: 10px 0;
 }
 
 .fechaEvento {
-    font-size: 14px;
-    color: #A0522D;
-    margin-bottom: 10px;
+  font-size: 14px;
+  color: #A0522D;
+  margin-bottom: 10px;
 }
 
 /************/
 /*** MENU ***/
 /************/
-
 /* Estilo para el contenedor de items en el menu */
 .contenedorMenu {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 /* Estilo para cada item del menu */
 .itemMenu {
-    max-width: 300px;
-    margin: 10px;
-    padding: 24px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    background-color: #f0f0f0;
+  max-width: 300px;
+  margin: 10px;
+  padding: 24px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
 }
 
 /* Estilo para la imagen dentro del item de menu */
 .imgMenu {
-    max-width: 100%;
-    object-fit: cover;
-    height: 250px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Convertir la imagen a escala de grises al 50% para poder aplicar efecto hover */
-    filter: grayscale(50%);
+  max-width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Convertir la imagen a escala de grises al 50% para poder aplicar efecto hover */
+  filter: grayscale(50%);
 }
-
 .imgMenu:hover {
-    /* Convertir la imagen a escala de grises al 0% provocando que resalte al pasar el cursor por encima */
-    filter: grayscale(0%);
+  /* Convertir la imagen a escala de grises al 0% provocando que resalte al pasar el cursor por encima */
+  filter: grayscale(0%);
 }
 
 /* Estilo para el precio en el menu */
 .contenedorMenu p {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    /* Espacio entre la imagen y el precio */
-    margin-top: 10px;
-    /* Elimina el margen inferior para reducir el espacio vacio */
-    margin-bottom: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  /* Espacio entre la imagen y el precio */
+  margin-top: 10px;
+  /* Elimina el margen inferior para reducir el espacio vacio */
+  margin-bottom: 0;
 }
 
 /*************/
 /* Servicios */
 /*************/
-
 /* Estilo para las descripciones de servicios */
 .contenedorServicios p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-    /* Color de texto personalizado */
-    margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  /* Color de texto personalizado */
+  color: #666;
+  margin: 10px 0;
 }
 
 /**********/
 /* Tienda */
 /**********/
-
 /* Estilo para el titulo del producto */
 .tituloH2Productos {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #333;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para el contenedor de productos */
 .contenedorProductos {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: center;
+  /* Estilo para cada producto individual */
 }
-
-/* Estilo para cada producto individual */
 .contenedorProductos article {
-    width: 300px;
-    margin: 10px;
-    padding: 16px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    /* Efecto de transicion */
-    transition: transform 0.3s ease-in-out;
+  width: 300px;
+  margin: 10px;
+  padding: 16px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Efecto de transicion */
+  transition: transform 0.3s ease-in-out;
+  /* Efecto de escala al pasar el raton sobre un producto */
 }
-
-/* Efecto de escala al pasar el raton sobre un producto */
 .contenedorProductos article:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Estilo para la imagen del producto */
 .imgProducto {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 /* Estilo para la descripcion del producto */
 .contenedorProductos article p {
-    max-width: 100%;
-    overflow: hidden;
-    /* Agrega puntos suspensivos (...) al final si el texto es demasiado largo */
-    text-overflow: ellipsis;
-    /* Acorta el texto */
-    white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  /* Agrega puntos suspensivos (...) al final si el texto es demasiado largo */
+  text-overflow: ellipsis;
+  /* Acorta el texto */
+  white-space: nowrap;
 }
 
 /* Estilo para el precio del producto */
 .precio {
-    font-weight: bold;
-    color: #A0522D;
-    margin: 10px 0 20px;
+  font-weight: bold;
+  color: #A0522D;
+  margin: 10px 0 20px;
 }
 
 /* Estilo para el boton "Comprar" */
 .btnComprar {
-    background-color: #A0522D;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: auto;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    /* Efecto de transicion */
-    transition: background-color 0.3s ease-in-out;
+  background-color: #A0522D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Efecto de transicion */
+  transition: background-color 0.3s ease-in-out;
+  /* Cambiar el estilo del boton cuando se coloca el cursor encima */
 }
-
-/* Cambiar el estilo del boton cuando se coloca el cursor encima */
 .btnComprar:hover {
-    background-color: #D2691E;
+  background-color: #D2691E;
 }
 
 /****************/
 /****CONTACTO****/
 /****************/
-
 /* Estilo para el formulario de contacto */
 .formularioContacto {
-    font-size: 16px;
-    /* Limitar el ancho del formulario */
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    /* Agregar una sombra sutil */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  /* Limitar el ancho del formulario */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  /* Agregar una sombra sutil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .formularioContacto label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
 }
-
-.formularioContacto input,
+.formularioContacto input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .formularioContacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Permite redimensionar solo verticalmente */
+  resize: vertical;
 }
-
-.formularioContacto textarea {
-    /* Permite redimensionar solo verticalmente */
-    resize: vertical;
-}
-
 .formularioContacto button {
-    background-color: #A0522D;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #A0522D;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
 .formularioContacto button:hover {
-    background-color: #D2691E;
+  background-color: #D2691E;
 }
-
 
 /* Estilo para la ubicacion */
 .mapaContainer {
-    border: 2px solid #333;
-    border-radius: 10px;
-    max-width: 100%;
-    font-size: 14px;
-    padding: 0;
-    margin-top: 10px;
-    display: inline-block;
-    /* Ocultar cualquier contenido que sobresalga */
-    overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 10px;
+  max-width: 100%;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 10px;
+  display: inline-block;
+  /* Ocultar cualquier contenido que sobresalga */
+  overflow: hidden;
+}
+.mapaContainer iframe {
+  width: 100%;
+  height: 100%;
 }
 
-.mapaContainer iframe {
-    width: 100%;
-    height: 100%;
+/**********/
+/* Footer */
+/**********/
+footer {
+  margin: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*****************/
 /* Media queries */
 /*****************/
-
 /* Estilos para dispositivos moviles */
 @media (max-width: 767px) {
-
-    /* Estilo para hacer que la barra de navegacion sea responsive en pantallas mas chicas */
-    nav {
-        text-align: center;
-    }
-
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav ul li a {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-
-    .collapse.navbar-collapse {
-        display: none;
-    }
-
-    .navbar-collapse.show {
-        display: block;
-        text-align: center;
-    }
-
-    /* Estilo para el precio en el menu con menor tamano de fuente */
-    .contenedorMenu p {
-        font-size: 12px;
-    }
-
-    /* Videos del blog */
-    .blogVideo {
-        width: 80%;
-        height: 40vw;
-    }
-
-    /* Ubicacion */
-    .mapaContainer iframe {
-        width: 350px;
-        height: 300px;
-    }
+  /* Estilo para hacer que la barra de navegacion sea responsive en pantallas mas chicas */
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul li a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .collapse.navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+    text-align: center;
+  }
+  /* Estilo para el precio en el menu con menor tamano de fuente */
+  .contenedorMenu p {
+    font-size: 12px;
+  }
+  /* Videos del blog */
+  .blogVideo {
+    width: 80%;
+    height: 40vw;
+  }
+  /* Ubicacion */
+  .mapaContainer iframe {
+    width: 350px;
+    height: 300px;
+  }
 }
-
 /* Estilos para  pantallas mas grandes (PC) */
 @media (min-width: 768px) {
-
-    /* Videos del blog */
-    .blogVideo {
-        width: 560px;
-        height: 315px;
-    }
-
-    /* Ubicacion */
-    .mapaContainer iframe {
-        width: 600px;
-        height: 400px;
-    }
+  /* Videos del blog */
+  .blogVideo {
+    width: 560px;
+    height: 315px;
+  }
+  /* Ubicacion */
+  .mapaContainer iframe {
+    width: 600px;
+    height: 400px;
+  }
 }
-
 /* Estilos para tabletas (768px hasta 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-
-    /* Estilo para el precio en el menu con menor tamano de fuente */
-    .contenedorMenu p {
-        font-size: 12px;
-    }
+  /* Estilo para el precio en el menu con menor tamano de fuente */
+  .contenedorMenu p {
+    font-size: 12px;
+  }
 }
-
-
 /* Estilos para PCs de mayor tamano de pantalla (hasta 1400px) */
 @media (max-width: 1400px) {
-    .contenedorMenu {
-        justify-content: center;
-    }
+  .contenedorMenu {
+    justify-content: center;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */
