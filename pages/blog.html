@@ -5,6 +5,8 @@
     <!-- Configuracion del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora las últimas noticias y tendencias en nuestro blog de Café WebDev. Descubre los beneficios del café para la concentración, las innovaciones tecnológicas en la industria cafetera y el arte del tostado de café de especialidad. Acompáñanos en este apasionante viaje donde cada taza cuenta una historia única ¡Lee nuestras entradas ahora!">
     <title>Café WebDev</title>
 
     <!-- Enlace a Bootstrap 5 CSS -->
@@ -91,7 +93,7 @@
                 <a class="blogLink" href="">Leer más</a>
             </article>
             <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <h2 class="tituloH2Destacado" >Las últimas tendencias tecnológicas en la industria del café</h2>
+                <h2 class="tituloH2Destacado">Las últimas tendencias tecnológicas en la industria del café</h2>
                 <p class="parrafosLargos">La tecnología está transformando la industria del café a pasos agigantados.
                     Desde aplicaciones de
                     seguimiento de café hasta máquinas de tostado de última generación, el mundo del café está
@@ -121,18 +123,17 @@
     </main>
     <!-- Pie de pagina -->
     <footer>
-        <h6>2023 &copy; Café WebDev - Todos los derechos reservados </h6>
+        <p>2023 &copy; Café WebDev - Todos los derechos reservados </p>
     </footer>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
     <!-- Mostrar/ocultar el boton al hacer scroll (solo en tamano de pantalla de PC) -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var botonArriba = document.querySelector('.btnArriba');
-    
+
             function toggleBotonArriba() {
                 if (window.scrollY > 250 && window.innerWidth >= 1024) {
                     botonArriba.style.display = 'block';
@@ -140,13 +141,13 @@
                     botonArriba.style.display = 'none';
                 }
             }
-    
+
             // Llama a la funcion al cargar la pagina
             toggleBotonArriba();
-    
+
             // Listener para gestionar cambios en el tamano de la ventana
             window.addEventListener('resize', toggleBotonArriba);
-    
+
             // Listener para gestionar el scroll
             window.addEventListener('scroll', toggleBotonArriba);
 
