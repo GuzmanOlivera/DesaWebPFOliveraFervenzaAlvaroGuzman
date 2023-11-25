@@ -16,7 +16,7 @@ header {
 
 /* Estilo para el texto "Cafe WebDev" en el header */
 .headerText {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     font-size: 24px;
 
     /* Hace que el texto sea un bloque para centrarlo facilmente */
@@ -29,7 +29,7 @@ header {
 nav {
     /* Centra el texto dentro del navbar */
     text-align: center;
-    background-color: #A0522D;
+    background-color: $color-principal;
     padding: 10px 20px;
 
     ul {
@@ -45,16 +45,16 @@ nav {
         li {
             display: inline-block;
             margin: 0 10px;
-            font-family: 'Roboto', sans-serif;
+            font-family: $fuente-roboto;
 
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-weight: bold;
                 color: white;
-                background-color: #A0522D;
+                background-color: $color-principal;
                 padding: 10px 20px;
-                border-radius: 5px;
+                border-radius: $borde-radius;
                 display: inline-block;
             }
         }
@@ -62,8 +62,8 @@ nav {
 }
 
 .navbar {
-    background-color: #A0522D;
-    border-bottom: 1px solid #000000;
+    background-color: $color-principal;
+    border-bottom: $borde-delgado-oscuro;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     .nav-link {
@@ -95,5 +95,5 @@ a {
 /* Efecto hover a los enlaces del menu */
 .nav-link:hover {
     color: #ffffff;
-    background-color: #7D3C16;
+    background-color: $color-navlink-hover;
 }

@@ -54,7 +54,7 @@ nav ul li a {
 
 .navbar {
   background-color: #A0522D;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .navbar .nav-link {
@@ -387,7 +387,7 @@ iframe {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   margin-top: auto;
   width: 100%;
@@ -448,7 +448,7 @@ iframe {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

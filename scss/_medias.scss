@@ -64,14 +64,12 @@
 /* Estilos para  pantallas mas grandes (PC) */
 @media (min-width: 768px) {
     /* Videos del blog */
-
     .blogVideo {
         width: 560px;
         height: 315px;
     }
 
     /* Ubicacion */
-
     .mapaContainer iframe {
         width: 600px;
         height: 400px;
@@ -92,4 +90,4 @@
     .contenedorMenu {
         justify-content: center;
     }
-}
+} 

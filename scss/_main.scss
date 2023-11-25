@@ -5,7 +5,7 @@
 /********/
 
 body {
-    background-color: #F5F5DC;
+    background-color: $color-fondo;
 }
 
 /******************/
@@ -36,26 +36,26 @@ main {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     text-align: center;
     text-decoration: underline;
     margin: 20px 0px;
 }
 
 .introP {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #333;
+    color: $color-texto;
 
     /* Espaciado superior e inferior */
     margin: 20px 0;
 }
 
 .tituloH2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -63,17 +63,17 @@ h1 {
     font-weight: bold;
 
     /* Color personalizado */
-    color: #A0522D;
+    color: $color-principal;
 
     /* Linea separadora */
-    border-bottom: 1px solid #333;
+    border-bottom: $borde-delgado;
 
     /* Espaciado inferior */
     padding-bottom: 5px;
 }
 
 .tituloH2Destacado {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -81,16 +81,16 @@ h1 {
     font-weight: bold;
 
     /* Color personalizado */
-    color: #A0522D;
+    color: $color-principal;
 
     /* Linea separadora */
-    border-bottom: 1px solid #333;
+    border-bottom: $borde-delgado;
 
     /* Espaciado inferior */
     padding-bottom: 5px;
 
     /* Linea separadora */
-    border-bottom: 2px solid #333;
+    border-bottom: $borde-grueso;
 }
 
 .parrafosLargos {
@@ -98,7 +98,7 @@ h1 {
 
     /* Espaciado entre lineas para mejorar la legibilidad */
     line-height: 1.6;
-    color: #333;
+    color: $color-texto;
 
     /* Espaciado superior para separar el parrafo del titulo */
     margin-top: 10px;
@@ -110,18 +110,18 @@ h1 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #A0522D;
+    background-color: $color-principal;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: $borde-radius;
+    font-size: $tamano-botones;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     z-index: 999;
 
     &:hover {
-        background-color: #D2691E;
+        background-color: $btn-hover-color;
         transform: scale(1.1);
     }
 }
@@ -132,7 +132,7 @@ h1 {
 
 a.blogLink {
     display: inline;
-    color: #A0522D;
+    color: $color-principal;
     /* Tamano de fuente mas pequeno para el enlace */
     font-size: 12px;
     /* Elimina el subrayado predeterminado */
@@ -169,11 +169,11 @@ iframe {
 /***********/
 
 .introEventos {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-roboto;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #333;
+    color: $color-texto;
 
     /* Espaciado superior e inferior */
     margin: 20px 0;
@@ -184,13 +184,13 @@ iframe {
     font-size: 16px;
     line-height: 1.6;
     /* Color de texto personalizado */
-    color: #666;
+    color: $color-texto-secundario;
     margin: 10px 0;
 }
 
 .fechaEvento {
     font-size: 14px;
-    color: #A0522D;
+    color: $color-principal;
     margin-bottom: 10px;
 }
 
@@ -211,7 +211,7 @@ iframe {
     max-width: 300px;
     margin: 10px;
     padding: 24px;
-    border: 2px solid #333;
+    border: $borde-grueso;
     border-radius: 10px;
     background-color: #f0f0f0;
 }
@@ -263,7 +263,7 @@ iframe {
     font-size: 16px;
     line-height: 1.6;
     /* Color de texto personalizado */
-    color: #666;
+    color: $color-texto-secundario;
     margin: 10px 0;
 }
 
@@ -275,8 +275,8 @@ iframe {
 .tituloH2Productos {
     font-size: 20px;
     margin: 10px 0;
-    color: #333;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: $color-texto;
+    text-shadow: $box-shadow;
 }
 
 /* Estilo para el contenedor de productos */
@@ -291,10 +291,10 @@ iframe {
         width: 300px;
         margin: 10px;
         padding: 16px;
-        border: 2px solid #333;
+        border: $borde-grueso;
         border-radius: 10px;
         background-color: #f0f0f0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: $box-shadow;
         /* Efecto de transicion */
         transition: transform 0.3s ease-in-out;
 
@@ -327,32 +327,32 @@ iframe {
 /* Estilo para el precio del producto */
 .precio {
     font-weight: bold;
-    color: #A0522D;
+    color: $color-principal;
     margin: 10px 0 20px;
 }
 
 /* Estilo para el boton "Comprar" */
 .btnComprar {
-    background-color: #A0522D;
+    background-color: $color-principal;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: $borde-radius;
+    font-size: $tamano-botones;
     cursor: pointer;
     margin-top: auto;
     width: 100%;
     text-align: center;
     text-decoration: none;
     display: block;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: $box-shadow;
 
     /* Efecto de transicion */
     transition: background-color 0.3s ease-in-out;
 
     /* Cambiar el estilo del boton cuando se coloca el cursor encima */
     &:hover {
-        background-color: #D2691E;
+        background-color: $btn-hover-color;
     }
 }
 
@@ -371,7 +371,7 @@ iframe {
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
-    border: 2px solid #333;
+    border: $borde-grueso;
     border-radius: 10px;
 
     /* Agregar una sombra sutil */
@@ -388,7 +388,7 @@ iframe {
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: $borde-radius;
         box-sizing: border-box;
     }
 
@@ -397,7 +397,7 @@ iframe {
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: $borde-radius;
         box-sizing: border-box;
 
         /* Permite redimensionar solo verticalmente */
@@ -405,24 +405,24 @@ iframe {
     }
 
     button {
-        background-color: #A0522D;
+        background-color: $color-principal;
         color: #fff;
         border: none;
         padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 18px;
+        border-radius: $borde-radius;
+        font-size: $tamano-botones;
         cursor: pointer;
         transition: background-color 0.3s;
 
         &:hover {
-            background-color: #D2691E;
+            background-color: $btn-hover-color;
         }
     }
 }
 
 /* Estilo para la ubicacion */
 .mapaContainer {
-    border: 2px solid #333;
+    border: $borde-grueso;
     border-radius: 10px;
     max-width: 100%;
     font-size: 14px;
