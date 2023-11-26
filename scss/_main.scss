@@ -63,6 +63,7 @@ h1 {
 .btnArriba {
     /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
     @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, $tamano-botones, $btn-hover-color);
+    margin-right: 20px;
     position: fixed;
     bottom: 20px;
     right: 20px;
