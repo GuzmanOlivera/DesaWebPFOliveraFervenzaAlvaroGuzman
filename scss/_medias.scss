@@ -39,6 +39,11 @@
         text-align: center;
     }
 
+    main {
+        margin: 5px;
+        padding: 5px;
+    }
+
     /* Estilo para el precio en el menu con menor tamano de fuente */
     .contenedorMenu p {
         font-size: 12px;
@@ -56,6 +61,14 @@
     .mapaContainer iframe {
         width: 350px;
         height: 300px;
+    }
+    /* Contacto */
+    .formularioContacto .row {
+        margin-bottom: 10px;
+    }
+
+    .formularioContacto .form-control {
+        font-size: 16px;
     }
 
     /* Footer */
@@ -81,17 +94,17 @@
     }
 }
 
-/* Estilos para tabletas (768px hasta 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Estilos para tabletas y otros dispositivos (768px hasta 1400px) */
+@media (min-width: 768px) and (max-width: 1400px) {
     /* Estilo para el precio en el menu con menor tamano de fuente */
-
     .contenedorMenu p {
         font-size: 12px;
     }
 }
 
+
 /* Estilos para PCs de mayor tamano de pantalla (hasta 1400px) */
-@media (max-width: 1400px) {
+@media (max-width: 1400px) { 
     .contenedorMenu {
         justify-content: center;
     }

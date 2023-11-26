@@ -16,7 +16,7 @@ footer {
   align-items: center;
 
   p {
-    margin: 0; // Elimina el margen por defecto del párrafo
+    margin: 0; // Elimina el margen por defecto del parrafo
   }
 
   .redesSociales {
@@ -24,7 +24,7 @@ footer {
     align-items: center;
 
     p {
-      margin-right: 10px; // Ajusta el espacio entre el texto y los íconos de redes sociales
+      margin-right: 10px; // Ajusta el espacio entre el texto y los iconos de redes sociales
     }
   }
 }
@@ -51,7 +51,7 @@ $redes: (
     transition: filter 0.3s ease;
 
     &:hover {
-      filter: brightness(1.9);
+      filter: brightness(1.2);
     }
   }
 }

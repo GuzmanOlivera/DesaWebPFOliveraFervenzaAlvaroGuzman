@@ -1,32 +1,6 @@
 // _main.scss
 
 /********/
-/* Body */
-/********/
-
-body {
-    background-color: $color-fondo;
-}
-
-/******************/
-/* Bootstrap Rows */
-/******************/
-
-.row {
-    margin-bottom: 20px;
-
-    /* Ajusta el margen superior de la primera fila */
-    &:first-child {
-        margin-top: 20px;
-    }
-
-    /* Anade un poco de espacio entre los elementos */
-    &:not(:first-child) {
-        margin-top: 10px;
-    }
-}
-
-/********/
 /* Main */
 /********/
 
@@ -36,6 +10,7 @@ main {
 }
 
 h1 {
+    /* Params: font-family, margin-top, margin-bottom, text-transform */
     @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     text-align: center;
     text-decoration: underline;
@@ -43,6 +18,7 @@ h1 {
 }
 
 .introP {
+    /* Params: font-family, margin-top, margin-bottom, text-transform */
     @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 18px;
     font-weight: bold;
@@ -52,6 +28,7 @@ h1 {
 }
 
 .tituloH2 {
+    /* Params: font-family, margin-top, margin-bottom, text-transform */
     @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 24px;
     font-weight: bold;
@@ -62,6 +39,7 @@ h1 {
 }
 
 .tituloH2Destacado {
+    /* Params: font-family, margin-top, margin-bottom, text-transform */
     @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 24px;
     font-weight: bold;
@@ -83,6 +61,7 @@ h1 {
 
 /* Estilo para el boton "Volver arriba" */
 .btnArriba {
+    /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
     @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, $tamano-botones, $btn-hover-color);
     position: fixed;
     bottom: 20px;
@@ -170,8 +149,8 @@ iframe {
 
 /* Estilo para el contenedor de items en el menu */
 .contenedorMenu {
+    /* Params: display, flex-wrap, margin, max-width, padding, border-radius */
     @include estilo-contenedor(flex, wrap, 20px auto, null, null, 10px);
-
 }
 
 /* Estilo para cada item del menu */
@@ -189,7 +168,7 @@ iframe {
 .imgMenu {
     max-width: 100%;
     object-fit: cover;
-    height: 250px;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -249,6 +228,7 @@ iframe {
 
 /* Estilo para el contenedor de productos */
 .contenedorProductos {
+    /* Params: display, flex-wrap, margin, max-width, padding, border-radius */
     @include estilo-contenedor(flex, wrap, 20px auto, none, 0, 10px);
     justify-content: center;
 
@@ -299,6 +279,7 @@ iframe {
 
 /* Estilo para el boton "Comprar" */
 .btnComprar {
+    /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
     @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, 18px, $btn-hover-color);
     width: 100%;
 }
@@ -352,6 +333,7 @@ iframe {
     }
 
     button {
+        /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
         @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, $tamano-botones, $btn-hover-color);
     }
 }

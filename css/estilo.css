@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/********/
+/* Body */
+/********/
+body {
+  background-color: #F5F5DC;
+}
+
+/******************/
+/* Bootstrap Rows */
+/******************/
+.row {
+  margin-bottom: 20px;
+  /* Ajusta el margen superior de la primera fila */
+  /* Anade un poco de espacio entre los elementos */
+}
+.row:first-child {
+  margin-top: 20px;
+}
+.row:not(:first-child) {
+  margin-top: 10px;
+}
+
 /**********/
 /* Header */
 /**********/
@@ -87,28 +109,6 @@ a {
 }
 
 /********/
-/* Body */
-/********/
-body {
-  background-color: #F5F5DC;
-}
-
-/******************/
-/* Bootstrap Rows */
-/******************/
-.row {
-  margin-bottom: 20px;
-  /* Ajusta el margen superior de la primera fila */
-  /* Anade un poco de espacio entre los elementos */
-}
-.row:first-child {
-  margin-top: 20px;
-}
-.row:not(:first-child) {
-  margin-top: 10px;
-}
-
-/********/
 /* Main */
 /********/
 main {
@@ -117,6 +117,7 @@ main {
 }
 
 h1 {
+  /* Params: font-family, margin-top, margin-bottom, text-transform */
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -127,6 +128,7 @@ h1 {
 }
 
 .introP {
+  /* Params: font-family, margin-top, margin-bottom, text-transform */
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -139,6 +141,7 @@ h1 {
 }
 
 .tituloH2 {
+  /* Params: font-family, margin-top, margin-bottom, text-transform */
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -151,6 +154,7 @@ h1 {
 }
 
 .tituloH2Destacado {
+  /* Params: font-family, margin-top, margin-bottom, text-transform */
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -173,6 +177,7 @@ h1 {
 
 /* Estilo para el boton "Volver arriba" */
 .btnArriba {
+  /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
   background-color: #A0522D;
   color: #fff;
   border: none;
@@ -259,6 +264,7 @@ iframe {
 /************/
 /* Estilo para el contenedor de items en el menu */
 .contenedorMenu {
+  /* Params: display, flex-wrap, margin, max-width, padding, border-radius */
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -279,7 +285,7 @@ iframe {
 .imgMenu {
   max-width: 100%;
   object-fit: cover;
-  height: 250px;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -332,6 +338,7 @@ iframe {
 
 /* Estilo para el contenedor de productos */
 .contenedorProductos {
+  /* Params: display, flex-wrap, margin, max-width, padding, border-radius */
   display: flex;
   flex-wrap: wrap;
   margin: 20px auto;
@@ -383,6 +390,7 @@ iframe {
 
 /* Estilo para el boton "Comprar" */
 .btnComprar {
+  /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
   background-color: #A0522D;
   color: #fff;
   border: none;
@@ -437,6 +445,7 @@ iframe {
   resize: vertical;
 }
 .formularioContacto button {
+  /* Params: background-color, color, border, padding, border-radius, font-size, &:hover.background-color */
   background-color: #A0522D;
   color: #fff;
   border: none;
@@ -506,7 +515,7 @@ footer .redesSociales p {
   transition: filter 0.3s ease;
 }
 .btn--twitter:hover {
-  filter: brightness(1.9);
+  filter: brightness(1.2);
 }
 
 .btn--facebook {
@@ -523,7 +532,7 @@ footer .redesSociales p {
   transition: filter 0.3s ease;
 }
 .btn--facebook:hover {
-  filter: brightness(1.9);
+  filter: brightness(1.2);
 }
 
 .btn--youtube {
@@ -540,7 +549,7 @@ footer .redesSociales p {
   transition: filter 0.3s ease;
 }
 .btn--youtube:hover {
-  filter: brightness(1.9);
+  filter: brightness(1.2);
 }
 
 .btn--instagram {
@@ -557,7 +566,7 @@ footer .redesSociales p {
   transition: filter 0.3s ease;
 }
 .btn--instagram:hover {
-  filter: brightness(1.9);
+  filter: brightness(1.2);
 }
 
 /*****************/
@@ -591,6 +600,10 @@ footer .redesSociales p {
     display: block;
     text-align: center;
   }
+  main {
+    margin: 5px;
+    padding: 5px;
+  }
   /* Estilo para el precio en el menu con menor tamano de fuente */
   .contenedorMenu p {
     font-size: 12px;
@@ -604,6 +617,13 @@ footer .redesSociales p {
   .mapaContainer iframe {
     width: 350px;
     height: 300px;
+  }
+  /* Contacto */
+  .formularioContacto .row {
+    margin-bottom: 10px;
+  }
+  .formularioContacto .form-control {
+    font-size: 16px;
   }
   /* Footer */
   footer .redesSociales {
@@ -623,8 +643,8 @@ footer .redesSociales p {
     height: 400px;
   }
 }
-/* Estilos para tabletas (768px hasta 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Estilos para tabletas y otros dispositivos (768px hasta 1400px) */
+@media (min-width: 768px) and (max-width: 1400px) {
   /* Estilo para el precio en el menu con menor tamano de fuente */
   .contenedorMenu p {
     font-size: 12px;

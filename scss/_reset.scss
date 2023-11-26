@@ -1,0 +1,26 @@
+
+/********/
+/* Body */
+/********/
+
+body {
+    background-color: $color-fondo;
+}
+
+/******************/
+/* Bootstrap Rows */
+/******************/
+
+.row {
+    margin-bottom: 20px;
+
+    /* Ajusta el margen superior de la primera fila */
+    &:first-child {
+        margin-top: 20px;
+    }
+
+    /* Anade un poco de espacio entre los elementos */
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
