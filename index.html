@@ -32,7 +32,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="arriba">
     <!-- Encabezado de la pagina -->
     <header>
         <!-- Logo y nombre del cafe -->
@@ -94,12 +94,40 @@
             estés buscando la taza de café perfecta o las últimas novedades en dispositivos tecnológicos para el
             hogar, estamos aquí para ayudarte a descubrir lo mejor de ambos mundos.</p>
     </main>
+    <a href="#arriba" class="btnArriba btn-secondary">Volver arriba</a>
     <!-- Pie de pagina -->
     <footer>
         <p>2023 &copy; Café WebDev - Todos los derechos reservados </p>
+        <!-- Redes Sociales -->
+        <div class="redesSociales">
+            <a href="#" class="btn--twitter" role="img" aria-label="Twitter"></a>
+            <a href="#" class="btn--facebook" role="img" aria-label="Facebook"></a>
+            <a href="#" class="btn--youtube" role="img" aria-label="Youtube"></a>
+            <a href="#" class="btn--instagram" role="img" aria-label="Instagram"></a>
+        </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+
+            var botonArriba = document.querySelector('.btnArriba');
+
+            function toggleBotonArriba() {
+                if (window.scrollY > 250 && window.innerWidth >= 1024) {
+                    botonArriba.style.display = 'block';
+                } else {
+                    botonArriba.style.display = 'none';
+                }
+            }
+
+            // Llama a la funcion al cargar la página
+            toggleBotonArriba();
+
+            // Listener para gestionar cambios en el tamano de la ventana
+            window.addEventListener('resize', toggleBotonArriba);
+
+            // Listener para gestionar el scroll
+            window.addEventListener('scroll', toggleBotonArriba);
+
             // Inicializar AOS
             AOS.init();
         });

@@ -5,9 +5,53 @@
 /**********/
 
 footer {
-    margin: 20px;
-    padding: 20px;
-    border-top: $borde-delgado-oscuro;
-    text-align: center;
-    font-size: 1rem;
+  margin: 20px;
+  padding: 20px;
+  border-top: $borde-delgado-oscuro;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0; // Elimina el margen por defecto del párrafo
+  }
+
+  .redesSociales {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-right: 10px; // Ajusta el espacio entre el texto y los íconos de redes sociales
+    }
+  }
+}
+
+$redes: (
+  twitter: "../img/redes-sociales/twitter.png",
+  facebook: "../img/redes-sociales/facebook.png",
+  youtube: "../img/redes-sociales/youtube.png",
+  instagram: "../img/redes-sociales/instagram.png"
+);
+
+@each $red, $image in $redes {
+  .btn--#{$red} {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    background-image: url($image);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(1.9);
+    }
+  }
 }

@@ -7,7 +7,6 @@
 /* Estilos para dispositivos moviles */
 @media (max-width: 767px) {
     /* Estilo para hacer que la barra de navegacion sea responsive en pantallas mas chicas */
-
     nav {
         text-align: center;
 
@@ -41,7 +40,6 @@
     }
 
     /* Estilo para el precio en el menu con menor tamano de fuente */
-
     .contenedorMenu p {
         font-size: 12px;
     }
@@ -58,6 +56,13 @@
     .mapaContainer iframe {
         width: 350px;
         height: 300px;
+    }
+
+    /* Footer */
+    footer {
+        .redesSociales {
+            margin-top: 10px; // Espacio entre el texto y los iconos de redes sociales en dispositivos móviles
+        }
     }
 }
 

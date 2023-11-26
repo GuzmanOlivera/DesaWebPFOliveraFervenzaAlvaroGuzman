@@ -36,61 +36,38 @@ main {
 }
 
 h1 {
-    font-family: $fuente-roboto;
+    @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     text-align: center;
     text-decoration: underline;
     margin: 20px 0px;
 }
 
 .introP {
-    font-family: $fuente-roboto;
-    text-transform: uppercase;
+    @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     color: $color-texto;
-
-    /* Espaciado superior e inferior */
     margin: 20px 0;
 }
 
 .tituloH2 {
-    font-family: $fuente-roboto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 24px;
     font-weight: bold;
-
-    /* Color personalizado */
     color: $color-principal;
-
-    /* Linea separadora */
     border-bottom: $borde-delgado;
-
-    /* Espaciado inferior */
     padding-bottom: 5px;
+
 }
 
 .tituloH2Destacado {
-    font-family: $fuente-roboto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    @include estilo-titulo($fuente-roboto, 20px, 10px, uppercase);
     font-size: 24px;
     font-weight: bold;
-
-    /* Color personalizado */
     color: $color-principal;
-
-    /* Linea separadora */
-    border-bottom: $borde-delgado;
-
-    /* Espaciado inferior */
-    padding-bottom: 5px;
-
-    /* Linea separadora */
     border-bottom: $borde-grueso;
+    padding-bottom: 5px;
 }
 
 .parrafosLargos {
@@ -106,22 +83,13 @@ h1 {
 
 /* Estilo para el boton "Volver arriba" */
 .btnArriba {
-    display: none;
+    @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, $tamano-botones, $btn-hover-color);
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: $color-principal;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: $borde-radius;
-    font-size: $tamano-botones;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
     z-index: 999;
 
     &:hover {
-        background-color: $btn-hover-color;
         transform: scale(1.1);
     }
 }
@@ -139,6 +107,7 @@ a.blogLink {
     text-decoration: none;
     /* Texto en negrita */
     font-weight: bold;
+
     &:hover {
         text-decoration: underline;
     }
@@ -201,9 +170,8 @@ iframe {
 
 /* Estilo para el contenedor de items en el menu */
 .contenedorMenu {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
+    @include estilo-contenedor(flex, wrap, 20px auto, null, null, 10px);
+
 }
 
 /* Estilo para cada item del menu */
@@ -281,9 +249,7 @@ iframe {
 
 /* Estilo para el contenedor de productos */
 .contenedorProductos {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto;
+    @include estilo-contenedor(flex, wrap, 20px auto, none, 0, 10px);
     justify-content: center;
 
     /* Estilo para cada producto individual */
@@ -333,27 +299,8 @@ iframe {
 
 /* Estilo para el boton "Comprar" */
 .btnComprar {
-    background-color: $color-principal;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: $borde-radius;
-    font-size: $tamano-botones;
-    cursor: pointer;
-    margin-top: auto;
+    @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, 18px, $btn-hover-color);
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    box-shadow: $box-shadow;
-
-    /* Efecto de transicion */
-    transition: background-color 0.3s ease-in-out;
-
-    /* Cambiar el estilo del boton cuando se coloca el cursor encima */
-    &:hover {
-        background-color: $btn-hover-color;
-    }
 }
 
 
@@ -405,18 +352,7 @@ iframe {
     }
 
     button {
-        background-color: $color-principal;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: $borde-radius;
-        font-size: $tamano-botones;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: $btn-hover-color;
-        }
+        @include estilo-boton($color-principal, #fff, none, 10px 20px, $borde-radius, $tamano-botones, $btn-hover-color);
     }
 }
 

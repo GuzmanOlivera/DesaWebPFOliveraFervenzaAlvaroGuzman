@@ -1,0 +1,30 @@
+@mixin estilo-titulo($font-family, $margin-top, $margin-bottom, $text-transform) {
+    font-family: $font-family;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    text-transform: $text-transform;
+}
+
+@mixin estilo-boton($background-color, $color, $border, $padding, $border-radius, $font-size, $hover-background) {
+    background-color: $background-color;
+    color: $color;
+    border: $border;
+    padding: $padding;
+    border-radius: $border-radius;
+    font-size: $font-size;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: $hover-background;
+    }
+}
+
+@mixin estilo-contenedor($display, $flex-wrap, $margin, $max-width, $padding, $border-radius) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    margin: $margin;
+    max-width: $max-width;
+    padding: $padding;
+    border-radius: $border-radius;
+}
