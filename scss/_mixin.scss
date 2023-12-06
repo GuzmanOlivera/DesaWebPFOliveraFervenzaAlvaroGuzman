@@ -18,6 +18,7 @@
     &:hover {
         background-color: $hover-background;
     }
+    
 }
 
 @mixin estilo-contenedor($display, $flex-wrap, $margin, $max-width, $padding, $border-radius) {
